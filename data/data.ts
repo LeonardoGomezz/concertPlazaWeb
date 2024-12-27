@@ -117,3 +117,62 @@ export const Concerts = [
     ]
   }
 ]
+
+export const Artist_list = [
+  {
+    id:1,
+    image: '/images/card1.png',
+    title: 'Headline card',
+    description: 'Short description',
+    label_tag: 'Label tag'
+  },
+  {
+    id:2,
+    image: '/images/card2.png',
+    title: 'Headline card',
+    description: 'Short description',
+    label_tag: 'Label tag'
+  },
+  {
+    id:3,
+    image: '/images/card3.png',
+    title: 'Headline card',
+    description: 'Short description',
+    label_tag: 'Label tag'
+  },
+  {
+    id:4,
+    image: '/images/card4.png',
+    title: 'Headline card',
+    description: 'Short description',
+    label_tag: 'Label tag'
+  },
+  {
+    id:5,
+    image: '/images/card1.png',
+    title: 'Headline card',
+    description: 'Short description',
+    label_tag: 'Label tag'
+  },
+  {
+    id:6,
+    image: '/images/card2.png',
+    title: 'Headline card',
+    description: 'Short description',
+    label_tag: 'Label tag'
+  },
+  {
+    id:7,
+    image: '/images/card3.png',
+    title: 'Headline card',
+    description: 'Short description',
+    label_tag: 'Label tag'
+  },
+  {
+    id:8,
+    image: '/images/card4.png',
+    title: 'Headline card',
+    description: 'Short description',
+    label_tag: 'Label tag'
+  }
+]
