@@ -7,11 +7,17 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'Lato': ['Lato','serif'],
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'base': '1440px'
+      }
     },
   },
   plugins: [],
