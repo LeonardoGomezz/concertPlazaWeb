@@ -36,7 +36,7 @@ export const Footer = () => {
             vivo.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center gap-[100px] sm:w-[370px]">
+        <div className="flex sm:items-start justify-center gap-[100px] sm:w-[370px]">
           <div>
             <h3 className="font-bold text-sm">Accesos rápidos</h3>
             <ul className="font-normal text-[12.8px] mt-4 flex flex-col gap-4">

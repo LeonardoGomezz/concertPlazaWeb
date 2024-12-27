@@ -16,7 +16,7 @@ export const SelectCountry = () => {
     <div className="relative min-w-[190px] w-auto z-50">
       <button
         type="button"
-        className="flex items-center w-full text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+        className="flex items-center justify-between w-full text-left focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
         onClick={() => setIsOpen(!isOpen)}
       >
         <Flag code={selectedCountry.code} width={30} className="mr-2" />
