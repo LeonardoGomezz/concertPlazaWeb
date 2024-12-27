@@ -11,11 +11,15 @@ export default {
       'Lato': ['Lato','serif'],
     },
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(359.77deg, #090D12 6.4%, #0D1421 80.01%)',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
       screens: {
+        'xs': '430px',
         'base': '1440px'
       }
     },
