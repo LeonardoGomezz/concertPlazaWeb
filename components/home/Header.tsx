@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Concerts } from "@/data/data";
 import CalendarIcon from "@/public/icons/calendarIcon";
 import LocationIcon from "@/public/icons/locationIcon";
@@ -13,13 +13,17 @@ export const Header = () => {
     <div>
       <Swiper
         navigation={true}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         className="mySwiper"
         loop={true}
       >
         {Concerts.map(({ id, cover_photo, title, subtitle, dates }) => (
           <SwiperSlide key={id}>
-            <div className="relative flex flex-col items-center h-[640px]">
+            <div className="relative flex flex-col items-center h-[680px] sm:h-[640px]">
               <img className="w-full h-full object-cover" src={cover_photo} alt={title} />
               <div className="absolute px-4 lg:px-24 w-full mt-20">
                 <div className="bg-[#11111399] p-5 rounded-lg max-w-3xl mx-auto lg:mx-0">
