@@ -5,3 +5,9 @@ export interface ArtistCardProps{
   description: string
   label_tag: string
 }
+
+export interface StatisticCardProps {
+  title: string
+  first_percent: string
+  second_percent: string
+}

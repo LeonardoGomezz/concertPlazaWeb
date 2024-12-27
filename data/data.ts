@@ -176,3 +176,21 @@ export const Artist_list = [
     label_tag: 'Label tag'
   }
 ]
+
+export const Statistics = [
+  {
+    title: 'Intensión de compra',
+    first_percent: '64%',
+    second_percent: '+12%'
+  },
+  {
+    title: 'Record de boletas',
+    first_percent: '86%',
+    second_percent: '+8%'
+  },
+  {
+    title: 'Record de boletas',
+    first_percent: '34%',
+    second_percent: '+34%'
+  }
+]

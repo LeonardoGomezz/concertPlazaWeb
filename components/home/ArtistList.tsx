@@ -12,7 +12,7 @@ import { ReservCard } from '../utilsComponents/ReservCard';
 
 export const ArtistList = () => {
   return (
-    <div className='text-[#FAFAFA] bg-custom-gradient'>
+    <div className='text-[#FAFAFA] bg-custom-gradient pb-16 sm:pb-24'>
       <div className='mt-[-10px] sm:mt-[-60px] relative z-10 px-4'>
         <ReservCard/>
       </div>
@@ -46,11 +46,17 @@ export const ArtistList = () => {
           1024:{
             slidesPerView: 2.5
           },
+          1280:{
+            slidesPerView: 3.2
+          },
           1440: {
             slidesPerView: 3.5
           },
           1536: {
             slidesPerView: 4
+          },
+          1711: {
+            slidesPerView: 4.5
           }
         }}
       >
