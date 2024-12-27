@@ -2,9 +2,30 @@ import { FastAccess, Support } from "@/data/data"
 import FacebookIcon from "@/public/icons/facebookIcon"
 import InstagramIcon from "@/public/icons/instagramIcon"
 import YoutubeIcon from "@/public/icons/youtubeIcon"
-import React from "react"
+import React, { useState } from "react"
+import { toast } from "sonner"
 
 export const Footer = () => {
+  const [subcribeEmail, setSubscribeEmail] = useState({
+    email: ''
+  })
+
+  const handleSubscribeEmail = (e: React.ChangeEvent<HTMLInputElement>) =>{
+    const {name, value} = e.target
+    setSubscribeEmail({
+      ...subcribeEmail,
+      [name]: value
+    })
+  }
+
+  const subscribe = (ev: React.ChangeEvent<HTMLFormElement>) =>{
+    ev.preventDefault()
+    toast.success('Email suscrito con exito')
+    setSubscribeEmail({
+      email: ''
+    })
+  }
+  
   return (
     <footer className="bg-[#0D1421] py-10 px-4 sm:px-16 base:px-24">
       <div className="grid grid-cols-1 justify-items-center xl:grid-cols-3 gap-[100px] base:gap-[140px]">
@@ -47,9 +68,13 @@ export const Footer = () => {
             música.
           </p>
           <div>
-            <form className="flex items-center gap-1">
+            <form className="flex items-center gap-1" onSubmit={subscribe}>
               <input
-                type="text"
+                type="email"
+                name="email"
+                value={subcribeEmail.email}
+                onChange={handleSubscribeEmail}
+                required
                 placeholder="Escriba su E-mail"
                 className="bg-[#323A4B] rounded-lg px-2 py-3"
               />
@@ -63,13 +88,13 @@ export const Footer = () => {
       <div className="mt-10 py-7 border-t border-gray-200 w-full">
         <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
           <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
-            <a href="#">
+            <a href="#" className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-300">
               <FacebookIcon />
             </a>
-            <a href="#">
+            <a href="#" className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-300">
               <YoutubeIcon />
             </a>
-            <a href="#">
+            <a href="#" className="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 duration-300">
               <InstagramIcon />
             </a>
           </div>
